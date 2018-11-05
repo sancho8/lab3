@@ -16,3 +16,11 @@ it('should find factorial', function(){
         throw new Error(`Expected ${expectedResult}, but got ${result}`);
     }
 });
+
+it('should find factorial', function(){
+    let expectedResult = 8;
+    let result = Math.pow(2,3);
+    if(result !== expectedResult) {
+        throw new Error(`Expected ${expectedResult}, but got ${result}`);
+    }
+});
