@@ -1,2 +1,10 @@
-export function multiply(x,y){return x * y;}
-export function factorial(n){return n ? n * factorial(n - 1) : 1;}
+module.exports = {
+
+    multiply: function(x, y) {
+        return x * y;
+    },
+  
+    factorial: function(n){
+        return n ? n * this.factorial(n - 1) : 1;
+    }
+  }
