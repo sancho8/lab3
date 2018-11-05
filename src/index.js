@@ -1,11 +1,8 @@
-import _ from 'lodash';
+import _ from "lodash";
 
 function component() {
-    let element = document.createElement('div');
-  
-    // Lodash, currently included via a script, is required for this line to work
-    element.innerHTML = _.join(['Hello', 'webpack', 'and', 'CI / CD'], ' ');
-  
+    let element = document.createElement("div");
+    element.innerHTML = _.join(["Hello", "webpack", "and", "CI / CD"], " ");
     return element;
   }
   
