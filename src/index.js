@@ -1,9 +1,10 @@
-import _ from "lodash";
+/*jslint browser:true */
+'use strict';
 
 function component() {
-    let element = document.createElement("div");
-    element.innerHTML = _.join(["Hello", "webpack", "and", "CI / CD"], " ");
+    var element = document.createElement("div");
+    element.innerHTML = "Hello, webpack, travis, jslint and testing";
     return element;
-  }
-  
-  document.body.appendChild(component());
+}
+
+document.body.appendChild(component());
