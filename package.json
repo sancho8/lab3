@@ -5,13 +5,14 @@
   "private": true,
   "scripts": {
     "build": "webpack && node version.js",
-    "test": "mocha *.test.js",
+    "test": "mocha *.test.js && jest mock.spec.js",
     "jslint": "jslint src/*.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "jest": "^23.6.0",
     "mocha": "^5.2.0",
     "webpack": "^4.25.0",
     "webpack-cli": "^3.1.2"
