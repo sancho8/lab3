@@ -15,3 +15,11 @@ test("mock implementation one time", () => {
   expect(mock("baz")).toBe(undefined);
   expect(mock).toHaveBeenCalledWith("baz");
 });
+
+test("mock promise resolution", () => {
+  const mock = jest.fn();
+  mock.mockResolvedValue("bar");
+
+  expect(mock("foo")).resolves.toBe("bar");
+  expect(mock).toHaveBeenCalledWith("foo");
+});
