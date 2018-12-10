@@ -48,6 +48,20 @@ Running JSLint (check JS syntax)
 npm run jslint
 ```
 
+## Running with Docker
+
+Running mocha tests
+
+```
+docker build -t lab4 .
+```
+
+```
+docker run -p <port>:8080 lab4 
+```
+
+After this you can access app on localhost:<port>
+
 ## Built With
 
 * Node
